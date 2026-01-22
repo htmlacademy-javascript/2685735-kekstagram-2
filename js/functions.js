@@ -8,7 +8,7 @@ checkStringLength('проверяемая строка', 10); // false
 // Task 2
 const getNormalizedString = (string) => string.toLowerCase().replaceAll(' ', '');
 
-const isParindrome = (string) => {
+const isPalindrome = (string) => {
   let reversedString = '';
 
   for (let i = string.length - 1; i >= 0; i--) {
@@ -21,5 +21,5 @@ const isParindrome = (string) => {
 const string1 = 'Лёша на полке клопа нашёл ';
 const string2 = 'Лёша на пАлке клопа нашёл ';
 
-isParindrome(getNormalizedString(string1)); // true
-isParindrome(getNormalizedString(string2)); // false
+isPalindrome(getNormalizedString(string1)); // true
+isPalindrome(getNormalizedString(string2)); // false
